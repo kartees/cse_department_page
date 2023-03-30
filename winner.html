@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LEADERBOARD</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png"  href="tce.png">
+  <meta name="viewport" content="width=device-width,height=device-height">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f52e354d3a.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <style type="text/css">
+  	 @import url(https://fonts.googleapis.com/css?Righteous=+Regular);
+
+    :root{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(48, 48, 48);
+
+}
+body::-webkit-scrollbar{
+    width: .70rem;
+}
+body::-webkit-scrollbar-thumb{
+    background: #06a7a7;
+    border-radius: .5cm;
+    background-size: 150% 150%;
+}
+body::-webkit-scrollbar-thumb:hover{
+  animation: change 2s ease-in-out infinite;
+}
+
+body::-webkit-scrollbar-track{
+    background:rgb(59, 59, 59);
+}
+.navbar{
+    /*background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(146,146,146,0) 100%);*/
+    background: linear-gradient( to top ,#038f8a ,#338f8c);
+    font-weight: bold;
+   font-family: 'Kanit', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    color: black;
+
+}
+.nav-link{
+  border :2px 5px 6px 2px solid white;
+  padding: 5px 10px;
+  color: black;
+}
+.nav-link:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 6px solid rgba(0,0,0,0.7);
+  color: black;
+}
+
+@media screen and (max-width: 600px){
+  .nav-link:hover{
+    transform: none;
+    color:black;
+  }
+}
+.navbar .nav-item .nav-link{
+  color: #fffded;
+}
+.he{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+
+  position: relative;
+  top : 20%;
+  padding-top: 150px;
+ }
+ @media screen and (min-width: 700px){
+	 .he{
+		  font-size: 60px;
+	 }
+ }
+  table{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    table-layout: fixed;
+  }
+  table tr,th,td{
+    padding: 10px 20px;
+    color: white;
+    border:  #080808;
+    border-collapse: collapse;
+    font-size: 18px;
+    font-family: 'Kanit' ,sans-serif;
+    background : linear-gradient(to top,#151f1d,#3c5e57);
+
+  }
+  th , td{
+    opacity: 1;
+  }
+  td:hover{
+    background :linear-gradient(to top,#151f1d,#3c5e57);
+  }
+  th{
+    color: black;
+    background: linear-gradient( to top ,#13a8a8,#358c8c);
+  }
+		@media screen and (max-width:800px)
+		{
+      table {
+				width:80%;
+			}
+			th{
+       padding: 0;
+			 margin: 0;
+			 padding-top: 10px;
+			 padding-bottom: 10px;
+			 padding-left: 5px;
+			 padding-right: 5px;
+			 font-size: 15px;
+			}
+			td{
+				padding: 0;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 5px;
+ 			 padding-right: 5px;
+				font-size:12px;
+			}
+		}
+  .re{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  .bu{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border: 1.5px solid #058585;
+    padding: 15px 30px;
+    color: #058585;
+    font-family: 'Acme',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.bu:hover{
+  color: white;
+  border: none;
+  text-decoration: none;
+  background: #058585;
+  box-shadow: 0 0 10px #058585,0 0 40px #058585,0 0 80px #058585;
+  transition-delay: 0.5s;
+}
+.bu span{
+   position: absolute;
+   display: block;
+ }
+.bu span:nth-child(1)
+{
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(1)
+{
+  left: 100%;
+  transition: 1s;
+}
+.bu span:nth-child(3)
+{
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(3)
+{
+   right:  100%;
+  transition: 1s;
+}
+.bu span:nth-child(2)
+{
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(2)
+{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.bu span:nth-child(4)
+{
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(4)
+{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.foot{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Permanent Marker','Kanit';
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  background : #058080;
+}
+
+table{
+  width:700px;
+}
+
+@media screen and (max-width:710px){
+  table{
+    width:500px;
+  }
+}
+@media screen and (max-width:510px){
+  table{
+    width:400px;
+  }
+}
+/* table tbody tr:nth-child(odd){
+        background: rgba(36, 130, 97,0.12);
+    }*/
+  </style>
+
+
+
+</head>
+
+<body>
+     <header>
+        <nav class="navbar  navbar-expand-lg  navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="tce.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                TCE
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">HOME</a>
+							</li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="announcement.html">ANNOUNCEMENTS</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" href="event.html">EVENTS</a>
+              </li>
+							<li class="nav-item">
+                <a class="nav-link" href="register.html">REGISTRATION</a>
+              </li>
+
+            </ul>
+            <div class="form-inline">
+                <i class="fas fa-user-circle" style="font-size: 35px; color: white"></i>
+                <a class="nav-link" href="profile.html" style="color: white">My Account</a></li>
+              </div>
+              </div>
+          </nav>
+
+        </header>
+        <main>
+          <div>
+            <h1 class="he" data-aos="fade-up">LEADERBOARD</h1>
+          </div>
+          <br>
+          <table border=5 data-aos="fade-up">
+            <col width="60">
+            <col width="90">
+            <col width="50">
+            <col width="50">
+            <col width="80">
+             <tr class="hes">
+                  <th>REG NO</th>
+                  <th>NAME</th>
+                  <th>YEAR</th>
+                  <th>RANK</th>
+                  <th>POINTS</th>
+              </tr>
+              <tr>
+                 <td>18C045</td>
+                  <td>KV</td>
+                  <td>2ND </td>
+                  <td>1</td>
+                  <td>3200</td>
+              </tr>
+               <tr>
+                 <td>18C008</td>
+                  <td>AMRISH</td>
+                  <td>2ND</td>
+                  <td>1</td>
+                  <td>3200</td>
+              </tr>
+              <tr>
+                  <td>17C034</td>
+                  <td>HARSHAN</td>
+                  <td>3RD</td>
+                  <td>3</td>
+                  <td>3115</td>
+              </tr>
+               <tr>
+                 <td>19C054</td>
+                  <td>PRASANNA</td>
+                  <td>1ST</td>
+                  <td>4</td>
+                  <td>2983</td>
+              </tr>
+              <tr>
+                  <td>18C043</td>
+                  <td>KARTEES</td>
+                  <td>2ND</td>
+                  <td>5</td>
+                  <td>1543</td>
+              </tr>
+             </table>
+             <br>
+             <center><div class="re" data-aos="fade-up">
+               <a style="text-align: center" class="bu" href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Back to Home
+               </a>
+               <br><br><br><br>
+             </div></center>
+        </main>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+     AOS.init({
+       offset:180,
+       duration:900
+     });
+   </script>
+</body>
+</html>

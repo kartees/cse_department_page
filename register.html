@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTER</title>
+	<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,height=device-height">
+      <link rel="icon" type="image/png"  href="tce.png">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f52e354d3a.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <style type="text/css">
+  	 @import url(https://fonts.googleapis.com/css?Righteous=+Regular);
+
+    :root{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+*{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+::placeholder{
+  color:rgb(81, 143, 98);
+}
+
+.container{
+  margin:auto;
+  padding:auto;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+  vertical-align: center;
+  padding-top:28px;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+  margin-top: 6px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+@media screen and (max-width:992px){
+  .col-30{
+    float:left;
+    width:40%;
+    vertical-align: center;
+    padding-top:28px;
+  }
+  .col-70{
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+  margin-top:20px;
+  margin-bottom:20px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .col-30{
+    float:left;
+    width:100%;
+    vertical-align: center;
+    padding-top:10px;
+  }
+  .col-70{
+  float: left;
+  width: 80%;
+  margin-top: 6px;
+  margin-bottom:20px;
+  }
+}
+
+label{
+  font-family:'Kanit',sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+
+}
+p{
+   font-family:'Acme',sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+input[type=text] {
+  background: radial-gradient( rgba(1, 15, 14,0.8),rgba(25, 28, 28,0.8));
+    float: left;
+    width:100%;
+    display: inline-block;
+  padding: 12px;
+  border: 1px solid rgba(20, 26, 26,0.8);
+  border-radius: 20px;
+  resize: vertical;
+  box-shadow: 5px 5px 10px solid rgba(0,0,0,0.5);
+  outline: none;
+  cursor: pointer;
+
+}
+select{
+  background: radial-gradient( rgba(1, 15, 14,0.8),rgba(25, 28, 28,0.8));
+    float: left;
+    width:100%;
+    display: inline-block;
+  padding: 12px;
+  border: 1px solid rgba(20, 26, 26,0.8);
+  border-radius: 20px;
+  resize: vertical;
+  box-shadow: 5px 5px 10px solid rgba(0,0,0,0.5);
+  outline: none;
+  cursor: pointer;
+  font-family: 'Permanent Marker',sans-serif;
+  color: #2cb0a5;
+}
+/*option{
+  background: radial-gradient( rgba(1, 15, 14,0.8),rgba(25, 28, 28,0.8));
+    float: left;
+  padding: 12px;
+  border: 1px solid rgba(20, 26, 26,0.8);
+  border-radius: 20px;
+  resize: vertical;
+  box-shadow: 5px 5px 10px solid rgba(0,0,0,0.5);
+  outline: none;
+  cursor: pointer;
+  font-family: 'Permanent Marker',sans-serif;
+  color: #2cb0a5;
+}*/
+.sel{
+  background: radial-gradient( rgba(1, 15, 14,0.8),rgba(25, 28, 28,0.8));
+    float: left;
+  padding: 12px;
+  border: 1px solid rgba(20, 26, 26,0.8);
+  border-radius: 20px;
+  resize: vertical;
+  box-shadow: 5px 5px 10px solid rgba(0,0,0,0.5);
+  outline: none;
+  cursor: pointer;
+  font-family: 'Permanent Marker',sans-serif;
+  color: #2cb0a5;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  /*input[type=text],label {
+    display: block;
+    margin-top: 20px;
+    padding:0;
+  }*/
+  .col-30{
+    float: left;
+  width: 100%;
+  margin-top: 6px;
+  vertical-align: center;
+  padding-top:20px;
+  }
+  .col-70 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+}
+
+.pad{
+  padding:20px;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(48, 48, 48);
+
+}
+body::-webkit-scrollbar{
+    width: .70rem;
+}
+body::-webkit-scrollbar-thumb{
+    background:#06a7a7;
+    border-radius: .5cm;
+    background-size: 150% 150%;
+}
+body::-webkit-scrollbar-thumb:hover{
+  animation: change 2s ease-in-out infinite;
+}
+
+body::-webkit-scrollbar-track{
+    background:rgb(59, 59, 59);
+}
+.navbar{
+    /*background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(146,146,146,0) 100%);*/
+    background: linear-gradient( to top ,#038f8a ,#338f8c);
+    font-weight: bold;
+   font-family: 'Kanit','Permanent Marker', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    color: black;
+
+}
+.nav-link{
+  border :2px 5px 6px 2px solid white;
+  padding: 5px 10px;
+  color: black;
+}
+
+.nav-link:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 6px solid rgba(0,0,0,0.7);
+  color: black;
+}
+@media screen and (max-width: 600px){
+  .nav-link:hover{
+    transform: none;
+    color:black;
+  }
+}
+.navbar .nav-item .nav-link{
+  color: #fffded;
+  font-family: 'Kanit',sans-serif;
+
+}
+.he{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+
+  position: relative;
+  top : 20%;
+  padding-top: 150px;
+ }
+ @media screen and (min-width: 700px){
+	 .he{
+		  font-size: 60px;
+	 }
+ }
+ .rem{
+   border-radius: 25px;
+   background: linear-gradient(60deg ,rgba(36, 150, 150,0.2),rgba(0, 13, 13,0.2));
+   box-shadow: 7px 8px 10px rgba(0,0,0,0.5);
+   font-family: 'Kanit',sans-serif;
+
+ }
+ .re{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height:30px;
+
+    /*padding-left:43%;
+    padding-right: 39%;*/
+
+
+  }
+  .bu{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border: 1.5px solid #058585;
+    padding: 15px 30px;
+    color: #058585;
+    margin-top:20px;
+    font-family: 'Acme',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.bu:hover{
+  color: white;
+  border: none;
+  text-decoration: none;
+  background: #058585;
+  box-shadow: 0 0 10px #058585,0 0 40px #058585,0 0 80px #058585;
+  transition-delay: 0.5s;
+}
+.bu span{
+   position: absolute;
+   display: block;
+ }
+.bu span:nth-child(1)
+{
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(1)
+{
+  left: 100%;
+  transition: 1s;
+}
+.bu span:nth-child(3)
+{
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(3)
+{
+   right:  100%;
+  transition: 1s;
+}
+.bu span:nth-child(2)
+{
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(2)
+{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.bu span:nth-child(4)
+{
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(4)
+{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+ input::placeholder{
+  color: #2cb0a5;
+  font-weight:bold;
+  opacity: 0.8;
+  font-family: 'Permanent Marker',sans-serif;
+ }
+ input{
+  background: red;
+ }
+ .foot{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Permanent Marker','Kanit';
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  background: #058080;
+}
+  </style>
+  <script type="text/javascript" src="push.min.js"></script>
+  <script type="text/javascript" src="ServiceWorker.min.js"></script>
+
+</head>
+
+<body>
+     <header>
+        <nav class="navbar  navbar-expand-lg  navbar-dark" style="font-family: 'Kanit','Acme';">
+            <a class="navbar-brand" style="font-family: 'Kanit','Acme'; color: white;" href="#">
+                <img src="tce.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                TCE
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">HOME</a>
+							</li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="announcement.html">ANNOUNCEMENTS</a>
+            </li>
+						<li class="nav-item">
+						 <a class="nav-link" href="event.html">EVENTS</a>
+					 </li>
+						<li class="nav-item">
+							<a class="nav-link" href="winner.html">LEADERBOARD</a>
+						</li>
+
+
+
+            </ul>
+            <div class="form-inline">
+                <i class="fas fa-user-circle" style="font-size: 35px; color:white"></i>
+                <a class="nav-link" href="profile.html" style="font-family: 'Kanit'; color: white;" >My Account</a></li>
+              </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+          <div>
+            <h1 class="he">REGISTRATION</h1>
+          </div>
+        <br><br>
+        <div class="container">
+    <div class="row" style="padding-top:20px">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8 rem" style="border: 2px solid rgba(32, 46, 46,0.6); padding:20px">
+<!--         <h2>Register</h2>
+ -->        <p>Please fill this form to register to the association events</p><hr>
+          <div style="margin-bottom: 10px">
+          <div class="col-30">
+              <div><label>Reg no:</label></div>
+          </div>
+          <div class="col-70">
+             <div><input type="text" name="regno" style="color:white" placeholder="Enter Register number..."></div>
+          </div>
+        </div>
+        <!-- <div class="pad">
+        <div class="col-30"><label>First name:</label></div>
+        <div class="col-70"><input type="text" name="fname" placeholder="Enter first name..."></div>
+        </div>
+        <div class="pad">
+        <div class="col-30"><label>Last name:</label></div>
+        <div class="col-70"><input type="text" name="lname" placeholder="Enter last name..."></div>
+        </div> -->
+        <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label>First name:</label></div>
+        </div>
+        <div class="col-70">
+          <div><input type="text" name="fname" style="color:white" placeholder="Enter first name..."></div>
+        </div>
+      </div><br><br>
+
+        <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label>Last name:</label></div>
+        </div>
+        <div class="col-70">
+          <div><input type="text" name="lname" style="color:white" placeholder="Enter last name..."></div>
+        </div>
+      </div>
+        <br><br>
+
+        <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label>Date of birth:</label></div>
+        </div>
+        <div class="col-70">
+          <div><input type="date" name="dob" placeholder="Enter date of birth..." style="width:100%; padding:12px;outline:none;background:radial-gradient( rgba(1, 15, 14,0.8),rgba(25, 28, 28,0.8)); border: 1px solid rgba(20, 26, 26,0.8); border-radius: 20px; box-shadow: 5px 5px 10px solid rgba(0,0,0,0.5);cursor: pointer;color: #2cb0a5;font-weight:bold;opacity: 0.8;font-family: 'Permanent Marker',sans-serif;
+" ></div>
+        </div>
+      </div>
+        <br><br>
+
+        <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label>Department:</label></div>
+        </div>
+        <div class="col-70">
+          <div><input type="text" style="color:white;cursor:pointer;z-index: 10" name="dept" placeholder="Enter Department..."></div>
+        </div>
+      </div>
+        <br><br>
+
+        <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label>Year:</label></div>
+        </div>
+        <div class="col-70">
+          <div><input type="text" style="color:white" name="year" placeholder="Enter year..."></div>
+        </div>
+      </div><br><br>
+
+      <div style="margin-bottom: 10px">
+        <div class="col-30">
+          <div><label for="events">Select event:</label></div>
+        </div>
+        <div class="col-70">
+          <div><select id="events">
+            <div class="sel">
+            <option value="codestorm">Code Storm</option>
+            <option value="photography">Photography</option>
+            <option value="csgo">CS_GO</option>
+            <option value="nfs">NFS</option>
+          </div>
+          </select></div>
+        </div>
+      </div>
+        <br><br><br><br>
+
+       <center>
+               <a style="z-index: 1" class="bu" href="javascript:void(0)" onclick="start()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                REGISTER
+               </a>
+
+        </center>
+
+     </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div><br><br><br>
+
+</main>
+  <script type="text/javascript">
+    function start()
+    {
+      Push.create("Successfully Registered", {
+    body: "Ready for Event",
+    icon: 'pro.png',
+    timeout: 5000,
+    onClick: function () {
+        window.focus();
+        this.close();
+    }
+});
+
+    }
+  </script>
+</body>
+</html>

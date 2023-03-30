@@ -1,0 +1,143 @@
+
+    :root{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(48, 48, 48);
+
+}
+.parallax1{
+    background: url('BG2.png');
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2{
+    background: url('BG.png');
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pcontxt{
+  padding-top: 100px;
+  justify-content: center;
+  text-align: center;
+}
+
+.navbar{
+    /*background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(146,146,146,0) 100%);*/
+    background: linear-gradient( to top ,#038f8a ,#338f8c);
+    font-weight: bold;
+    font-family: 'righteous-regular',serif;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    color: black;
+}
+.nav-link{
+  border : 5px 6px 2px solid white;
+  padding: 5px 10px;
+}
+
+body::-webkit-scrollbar{
+    width: .50rem;
+}
+body::-webkit-scrollbar-thumb{
+    background:linear-gradient( 180.6deg,  rgba(123,90,224,1) 11.2%, rgba(164,46,253,1) 32.6%, rgba(213,56,234,1) 62.7%, rgba(251,138,52,1) 100.2% );
+    border-radius: .5cm;
+    background-size: 150% 150%;
+}
+body::-webkit-scrollbar-thumb:hover{
+  animation: change 2s ease-in-out infinite;
+}
+
+body::-webkit-scrollbar-track{
+    background:rgb(59, 59, 59);
+}
+.cardt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    font-size: 1.5rem;
+    color: #fff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 2.5mm;
+    transition: all 500ms;
+    overflow: hidden;
+    padding:20px 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.card{
+  background: url('hack.png');
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  border-radius: 2.5mm;
+  font-size: 1.5rem;
+  transition: all 500ms;
+}
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+ }
+.cardt:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-3px) scale(1.1);
+    background: rgb(255, 101, 73);
+    color: black;
+ }
+ .top-grid{
+  display: grid;
+  gap : 1.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+.card-title{
+  margin-left: 1rem;
+  margin-top: .5rem ;
+} 
+.card-img-top{
+border-top-left-radius: 2.5mm;
+border-top-right-radius: 2.5mm;
+}
+.card .card-text{
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+
+}
+.contain{
+  margin-top: 200px;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 35%, rgba(146,146,146,0) 100%);
+}
+@keyframes change{
+            0%{
+                background-position: 0 50%;
+
+            }
+            50%{
+                background-position: 100% 50%;
+
+            }
+            100%{
+                background-position: 0% 50%;
+
+            }
+    }
+
+

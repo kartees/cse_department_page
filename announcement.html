@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ANNOUNCEMENTS</title>
+  <link rel="icon" type="image/png"  href="tce.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,height=device-height">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f52e354d3a.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <style type="text/css">
+  	 @import url(https://fonts.googleapis.com/css?Righteous=+Regular);
+
+    :root{
+    font-family: 'Open Sans';
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(48, 48, 48);
+
+}
+body::-webkit-scrollbar{
+    width: .70rem;
+}
+body::-webkit-scrollbar-thumb{
+    background:#06a7a7;
+    border-radius: .5cm;
+    background-size: 150% 150%;
+}
+body::-webkit-scrollbar-thumb:hover{
+  animation: change 2s ease-in-out infinite;
+}
+
+body::-webkit-scrollbar-track{
+    background:rgb(59, 59, 59);
+}
+.navbar{
+  background: linear-gradient( to top ,#038f8a ,#338f8c);
+    font-weight: bold;
+   font-family: 'Kanit', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+.nav-link{
+  border :2px 5px 6px 2px solid white;
+  padding: 5px 10px;
+  color: black;
+  transition: 200ms ease-in-out;
+}
+.nav-link:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 6px solid rgba(0,0,0,0.7);
+  color: black;
+}
+@media screen and (max-width: 600px){
+  .nav-link:hover{
+    transform: none;
+    color:black;
+  }
+}
+.navbar .nav-item .nav-link{
+  color: #fffded;
+}
+.he{
+  justify-content: center;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-weight: bold;
+
+  position: relative;
+  top : 20%;
+  padding-top: 150px;
+ }
+ @media screen and (min-width: 700px){
+	 .he{
+		  font-size: 60px;
+	 }
+ }
+ .parallax1{
+    background: url('BG2.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallaxn{
+	 background: url('BG.png');
+	 min-height: 500px;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+.top-grid{
+  display: grid;
+  gap : 1.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-family: 'Acme',sans-serif;
+  margin-bottom: 2%;
+}
+.card{
+  background-color: #258079;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  margin: 50px;
+}
+.card ul{
+  position: relative;
+}
+.card ul li{
+  list-style: none;
+  font-size: 1rem;
+}
+.card ul li a{
+  position: relative;
+  color: rgb(109, 109, 109);
+}
+.inner-card{
+  box-shadow: inset 0px 0px 10px rgba(92, 99, 99,0.5);
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  padding: 20px 12px;
+ background-color: rgb(59, 59, 59);
+}
+
+.co{
+	border: 2px solid black;
+	width: 70%;
+	padding: 20px 10px;
+	top : 20%;
+	margin-bottom: 8%;
+	border: none;
+	text-align: center;
+	justify-content: center;
+	box-shadow: 2px 2px 4px solid #41a3a3;
+	align-items: center;
+	color: white;
+	background: #378080;
+	border-radius: 20px;
+}
+.co h3{
+	margin-top: 2%;
+	font-family: 'Permanent Marker',sans-serif;
+	color: #303636;
+	font-size: 34px;
+	letter-spacing: 1px;
+	}
+.co h4{
+	font-family: "Acme",sans-serif;
+	color: black;
+	letter-spacing: 1.3px;
+	font-weight: bold;
+}
+.co p{
+	color: white;
+	font-size: 19px;
+	letter-spacing: 1.5px;
+	font-family: 'Kanit',"Acme",sans-serif;
+	font-weight: bold;
+}
+.re{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-left: 43%;
+    padding-right: 43%;
+}
+.bu{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border: 1.5px solid #058585;
+    padding: 15px 30px;
+    color: #058585;
+    font-family: 'Acme',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.bu:hover{
+  color: white;
+  border: none;
+  text-decoration: none;
+  background: #058585;
+  box-shadow: 0 0 10px #058585,0 0 40px #058585,0 0 80px #058585;
+  transition-delay: 0.5s;
+}
+.bu span{
+   position: absolute;
+   display: block;
+ }
+.bu span:nth-child(1)
+{
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(1)
+{
+  left: 100%;
+  transition: 1s;
+}
+.bu span:nth-child(3)
+{
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+
+.bu:hover span:nth-child(3)
+{
+   right:  100%;
+  transition: 1s;
+}
+.bu span:nth-child(2)
+{
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(2)
+{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.bu span:nth-child(4)
+{
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(4)
+{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.cardt {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 120px 200px;
+  grid-template-areas: "img" "txt";
+  border-radius: 18px;
+  background: rgb(68, 68, 68);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'Acme',sans-serif;
+  text-align: center;
+  width: 250px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  padding: 0;
+  overflow: auto;
+ }
+ .cardt-image11{
+  grid-area: img;
+  background: url("cm.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image12{
+  grid-area: img;
+  background: url("ph.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image13{
+  grid-area: img;
+  background: url("code error.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image14{
+  grid-area: img;
+  background: url("nfs.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-text {
+  grid-area: txt;
+  margin: 25px;
+  text-align: center;
+}
+.cardt-text p {
+  color: rgb(230, 230, 230);
+  font-size:15px;
+  font-weight: 300;
+}
+.cardt-text h2 {
+  margin-top:0px;
+  font-size:28px;
+  color: rgb(255, 255, 255);
+}
+.cardt:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+ }
+
+ .parallax2{
+    background: url('BG.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vis h3{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #04a7a7;
+}
+@media screen and (max-width: 700px) {
+.vis h3{
+  font-size: 20px;
+
+}
+}
+.vis p{
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: #b9bdbd;
+}
+.foot{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Permanent Marker','Kanit';
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  background: #058080;
+}
+  </style>
+</head>
+
+<body>
+     <header>
+        <nav class="navbar  navbar-expand-lg  navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="tce.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                TCE
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+							<li class="nav-item">
+                <a class="nav-link" href="index.html">EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">REGISTRATION</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="winner.html">LEADERBOARD</a>
+              </li>
+
+            </ul>
+            <div class="form-inline">
+                <i class="fas fa-user-circle" style="font-size: 35px; color:white"></i>
+                <a class="nav-link" href="profile.html" style="color: white">My Account</a></li>
+              </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+          <div class="parallax1">
+            <div class="paratxt">
+              <br><br><br>
+                <h1 class="he" data-aos="fade-up">ANNOUNCEMENTS</h1>
+             </div>
+          </div>
+
+
+          <div>
+            <section class="top-grid" data-aos="fade-up">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #158f8f;
+                    font-family: 'Permanent Marker','Kanit',serif;font-size: 20px; color: #232626">Announcements</h5>
+                    <div class="card-text">
+                    <div class="inner-card" style="text-align: center">Cat 2 will conducted soon<br><br>Semester eludhidhan aaganum<br><br>Lab exam um dhan</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: #158f8f;
+                    font-family: 'Permanent Marker','Kanit',serif;font-size: 20px; left: 10%; color:#232626;">  News</h5>
+                    <div class="card-text">
+                    <div class="inner-card" style="text-align: center; letter-spacing: 1.2px">Quarantine yil 4th semester ai kalikum maanava selvangal<br><br>Veetil CAT 3 eludhi 50 eduka pogum back bechers</div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+          </div>
+					<div class="parallaxn">
+						<div class="paratxt">
+							<br><br><br>
+								<div class="vis" data-aos="fade-up" style="top:20%; padding-top: 8%;"><h3>CONGRAGULATION WINNERS</h3>
+								<br><p>Our best wishes to the winners</p></div>
+						 </div>
+					</div>
+					<center><div class="co" style="margin-top:10%">
+						<h3> IEEE ASSOCIATION Event Results</h3><br>
+						<h4>CODE DEBUGGING CONTEST</h4><br>
+						<p>1. 17C016 Deivanai S</p><br>
+						<p>2. 18C057 Meenakshi Sundaram</p><br>
+						<p>3. 17C108 Varsha G S</p>
+
+					</div></center>
+					<center><div class="co">
+						<h3> CSI ASSOCIATION Event Results</h3><br>
+						<h4>GUESS THE OUTPUT</h4><br>
+						<p>1. 17C048 L.Maheshavel</p><br>
+						<p>2. 18C057 Meenakshi Sundaram</p><br>
+						<p>3. 17C091 S.Soorya</p>
+
+					</div></center>
+          <div class="parallax2">
+            <br><br><br>
+             <div class="vis" data-aos="fade-up"><h3>Upcomming Events</h3><br>
+              <p style="text-align: center;" data-aos="fade-up">The events which assosiates to the students which are handled by our final year students and was sponsered by our CSE department associations </p></div><br><br>
+              <center>
+
+                 <a class="bu" style="text-align:center" href="event.html" data-aos="fade-up">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  All Events
+                 </a>
+                </center>
+            </div>
+
+
+        <div class="p2con">
+          <center>
+          <section class="top-grid" data-aos="fade-up">
+              <div class="cardt">
+                 <div class="cardt-image11"></div>
+                 <div class="cardt-text">
+                  <h2>CODE STORM</h2>
+                  <p>Let your logic be undeniable</p>
+                </div>
+              </div>
+              <div class="cardt">
+                <div class="cardt-image12"></div>
+                <div class="cardt-text">
+                 <h2>PHOTOGRAPHY</h2>
+                 <p>Say HAI to your bhotons</p>
+               </div>
+             </div>            <div class="cardt">
+              <div class="cardt-image13"></div>
+              <div class="cardt-text">
+               <h2>CS_GO</h2>
+               <p>Unleash the tech Avenger in you</p>
+             </div>
+           </div>            <div class="cardt">
+            <div class="cardt-image14
+            "></div>
+            <div class="cardt-text">
+             <h2>NFS</h2>
+             <p>Let your web cling to the  design</p>
+           </div>
+         </div>
+       </section>
+     </center></div>
+
+
+       </main>
+      
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+     AOS.init({
+       offset:180,
+       duration:900
+     });
+   </script>
+</body>
+</html>

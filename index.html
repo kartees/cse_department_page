@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f52e354d3a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Kanit:ital,wght@1,400;1,500&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png"  href="tce.png">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>CSE</title>
+</head>
+<style>
+  @import url(https://fonts.googleapis.com/css?Righteous=+Regular);
+
+    :root{
+    font-family: 'Open Sans';
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    /* background: linear-gradient(to bottom ,black,black,#1a1a1a,#1a1a1a,#1a1a1a,#1a1a1a,#1a1a1a, #1a1a1a);*/
+    background: #1a1a1a;
+    margin-right: 0;
+    width: 100%;
+}
+.parallax1{
+    background: url('BG4.png');
+    min-height: 400px;
+    max-width: 100vh;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 .clouds{
+    position: absolute;
+    top: 0;
+    left:0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.parallax1 .clouds img{
+    position: absolute;
+    bottom: 0;
+    margin : 0;
+    padding-bottom: 0;
+    max-width: 100%;
+    animation: animate calc(9s * var(--i)) linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-70%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+.parallax2{
+    background: url('BG.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3{
+    background: url('BG3.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax4{
+    background: url('BG2.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:15%;
+}
+.parallax5{
+    background: url('BG5.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:15%;
+}
+.parallax6{
+    background: url('BG6.png');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:15%;
+}
+.pcontxt{
+  padding-top: 80px;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Knewave','Acme', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2.3px;
+  position: relative;
+  top : 5%;
+}
+@media screen and (min-width: 700px)
+{
+  .pcontxt{
+    font-size: 60px;
+      padding-top: 80px;
+        top : 5%;
+  }
+}
+
+.par{
+      font-family: 'Acme', sans-serif;
+      color: rgba(7,173,143,1);
+      font-weight: bold;
+      position: relative;
+      top: 70%;
+      text-align: center;
+      font-size: 22px;
+      padding-top: 120px;
+      justify-content: center;
+}
+.quote{
+   color: #959c9b;
+      font-weight: bold;
+      position: relative;
+      top: 75%;
+      z-index: 1;
+      letter-spacing: 1.5px;
+      text-align: center;
+       justify-content: center;
+      font-size: 24px;
+      padding-top: 20px;
+      margin-bottom: 6px;
+      font-family: 'Pacifico', cursive;
+      bottom: 10%;
+}
+@media screen and (max-width: 700px) {
+
+.par{
+  font-size:20px;
+}
+.quote{
+    font-size:20px;
+}
+}
+
+.navbar{
+  background: linear-gradient(45deg, rgba(7, 140, 140,0.65) 0%, rgba(12, 117, 117,0.8) 35%, rgba(146,146,146,0) 100%);
+    font-weight: bold;
+    background-size: 200% 200%;
+   font-family: 'Kanit', sans-serif;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+}
+.nav-link{
+  border :2px 5px 6px 2px solid white;
+  padding: 5px 10px;
+  color: black;
+}
+.nav-link:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 6px solid rgba(0,0,0,0.7);
+  color: black;
+}
+@media screen and (max-width: 600px){
+	.nav-link:hover{
+		transform: none;
+		color:black;
+	}
+}
+
+.navbar .nav-item .nav-link{
+  color: #fffded;
+}
+.clg {
+      top: 110px;
+
+}
+body::-webkit-scrollbar{
+    width: .70rem;
+}
+body::-webkit-scrollbar-thumb{
+    background:#06a7a7;
+    border-radius: .5cm;
+    background-size: 150% 150%;
+}
+body::-webkit-scrollbar-thumb:hover{
+  animation: change 2s ease-in-out infinite;
+}
+
+body::-webkit-scrollbar-track{
+    background:rgb(59, 59, 59);
+}
+.vis h3{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  color: #04a7a7;
+}
+.vis p{
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Cormorant Garamond', serif;
+  color: #b9bdbd;
+}
+@media screen and (max-width: 700px){
+  .vis h3{
+    font-size: 30px;
+  }
+  .vis p{
+    font-size: 15px;
+    width:95%;
+    padding-left: 10%;
+  }
+  .vis h2{
+    font-size:30px;
+  }
+}
+/* assosiation cards */
+.top-grid{
+  display: grid;
+  gap : 1.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-family: 'Acme',sans-serif;
+}
+.p1con{
+  font-family: 'Acme',sans-serif;
+}
+.cardd{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: #afb3b3;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'Acme',sans-serif;
+  text-align: center;
+  width: 300px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:25px;
+}
+.cardd-image {
+  grid-area: image;
+  background: url("iucee.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+.cardd-image2 {
+  grid-area: image;
+  background: url("csi.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+.cardd-image3 {
+  grid-area: image;
+  background: url("ieee.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
+.cardd-text {
+  grid-area: text;
+  font-family: 'Kanit',sans-serif;
+  color: #394040;
+  margin: 25px;
+}
+.cardd-text .date {
+  color: rgb(255, 7, 110);
+  font-size:13px;
+}
+.cardd-text p {
+  color: #353838;
+  font-size:15px;
+  font-weight: bold;
+}
+.cardd-text h2 {
+  margin-top:0px;
+  font-size:28px;
+  color: #287a7a;
+  font-family: 'Permanent Marker','Acme',sans-serif;
+}
+.cardd-stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(255, 7, 21);
+}
+.cardd-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:10px;
+}
+.cardd:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+@media screen and (max-width: 700px) {
+.cardd{
+ margin:5px;
+ transform: scale(0.7);
+}
+.cardd:hover{
+  transform: scale(0.8);
+}
+}
+/*events cards */
+.cardt {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 120px 200px;
+  grid-template-areas: "img" "txt";
+  border-radius: 18px;
+  background: rgb(68, 68, 68);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: 'Acme',sans-serif;
+  text-align: center;
+  width: 250px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+  padding: 0;
+ }
+ .cardt-image11{
+  grid-area: img;
+  background: url("cm.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image12{
+  grid-area: img;
+  background: url("ph.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image13{
+  grid-area: img;
+  background: url("code error.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-image14{
+  grid-area: img;
+  background: url("nfs.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  min-width: 250px;
+  padding: 0%;
+}
+.cardt-text {
+  grid-area: txt;
+  margin: 25px;
+  text-align: center;
+}
+.cardt-text p {
+  color: rgb(230, 230, 230);
+  font-size:15px;
+  font-weight: 300;
+}
+.cardt-text h2 {
+  margin-top:0px;
+  font-size:28px;
+  font-family: 'Permanent Marker',"Acme",sans-serif;
+  color: #2f968d;
+}
+.cardt:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+ }
+
+.top-grid2{
+  display: grid;
+  gap : 1.5rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  font-family: 'Acme',sans-serif;
+}
+.card-title{
+  margin-left: 1rem;
+  margin-top: .5rem ;
+}
+.card-img-top{
+border-top-left-radius: 2.5mm;
+border-top-right-radius: 2.5mm;
+}
+.card .card-text{
+  display: flex;
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+
+}
+.contain{
+  margin-top: 200px;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 35%, rgba(146,146,146,0) 100%);
+}
+@keyframes change{
+            0%{
+                background-position: 0 50%;
+
+            }
+            50%{
+                background-position: 100% 50%;
+
+            }
+            100%{
+                background-position: 0% 50%;
+
+            }
+    }
+
+ /*sig cards*/
+.cardss {
+  display: grid;
+  grid-template-columns: 250px;
+  grid-template-rows: 150px 160px;
+  grid-template-areas: "img" "txt";
+  border-radius: 18px;
+
+
+  font-family: 'Acme',sans-serif;
+  text-align: center;
+  width: 250px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:30px;
+  padding: 0;
+  overflow: auto;
+ }
+ @media screen and (min-width: 700px) {
+.cardss{
+  margin:30px 50%;
+}
+ }
+ .cardss1{
+  background: rgb(106, 73, 138);
+  }
+ .cards2{
+  background: rgb(7, 181, 88);
+  }
+ .cards3{
+  background: rgb(207, 81, 148);
+  }
+ .cards4{
+  background: rgb(193, 219, 53);
+  }
+ .cards5{
+  background: rgb(237, 47, 47);
+  }
+
+
+ .cardss-image11{
+  grid-area: img;
+  background: url("se.jpg");
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
+  min-height:150px;
+  min-width:150px;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:25px;
+
+}
+.cardss-image12{
+  grid-area: img;
+  background: url("sde.png");
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
+  min-height:150px;
+  min-width:150px;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:25px;
+
+}
+.cardss-image13{
+  grid-area: img;
+  background: url("ns.png");
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
+  min-height:150px;
+  min-width:150px;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:25px;
+
+}
+.cardss-image14{
+  grid-area: img;
+  background: url("dm.png");
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
+  min-height:150px;
+  min-width:150px;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:25px;
+
+}
+.cardss-image15{
+  grid-area: img;
+  background: url("ai.jpeg");
+  border-radius:50%;
+  background-size: cover;
+  background-position: center;
+  min-height:150px;
+  min-width:150px;
+  margin-left:45px;
+  margin-right:45px;
+  margin-top:25px;
+
+}
+.cardss-text {
+  grid-area: txt;
+  margin: 25px;
+  text-align: center;
+}
+.cardss-text h2 {
+  margin-top:25px;
+  font-size:28px;
+  color: rgb(255, 255, 255);
+}
+.cardss:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+ }
+.re{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /*padding-left: 43%;
+    padding-right: 39%;*/
+}
+.bu{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border: 1.5px solid #058585;
+    padding: 15px 30px;
+    color: #058585;
+    font-family: 'Acme',sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.bu:hover{
+  color: white;
+  border: none;
+  text-decoration: none;
+  background: #058585;
+  box-shadow: 0 0 10px #058585,0 0 40px #058585,0 0 80px #058585;
+  transition-delay: 0.5s;
+}
+.bu span{
+   position: absolute;
+   display: block;
+ }
+.bu span:nth-child(1)
+{
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(1)
+{
+  left: 100%;
+  transition: 1s;
+}
+.bu span:nth-child(3)
+{
+   bottom: 0;
+   right: -100%;
+   width: 100%;
+   height: 2px;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+
+.bu:hover span:nth-child(3)
+{
+   right:  100%;
+  transition: 1s;
+}
+.bu span:nth-child(2)
+{
+   top: -100%;
+   right: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(2)
+{
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.bu span:nth-child(4)
+{
+   bottom: -100%;
+   left: 0;
+   width: 2px;
+   height: 100%;
+   background : linear-gradient(90deg,transparent,#058585);
+}
+.bu:hover span:nth-child(4)
+{
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+@media screen and (max-width: 700px){
+#social{
+  display: none;
+}
+#mob-social{
+ display: block;
+}
+
+}
+
+@media screen and (min-width: 600px){
+#mob-social{
+ display: none;
+}
+}
+
+.socialbuttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  color: #fff;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.socialbuttons ul{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.socialbuttons ul li{
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 30px;
+  transform: rotate(-30deg) skew(25deg);
+}
+
+.socialbuttons ul li span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(41, 41, 41);
+  transition: 0.5s;
+  align-content: center;
+  justify-content: center !important;
+  text-align: center;
+  color: #fff;
+  font-size: 30px !important;
+  border-radius: .25cm ;
+}
+
+.socialbuttons ul li:hover span:nth-child(5){
+       transform: translate(40px,-40px);
+       opacity: 1;
+}
+.socialbuttons ul li:hover span:nth-child(4){
+       transform: translate(30px,-30px);
+       opacity: .8;
+}
+.socialbuttons ul li:hover span:nth-child(3){
+       transform: translate(20px,-20px);
+       opacity: .6;
+}
+.socialbuttons ul li:hover span:nth-child(2){
+       transform: translate(10px,-10px);
+       opacity: .4;
+}
+.socialbuttons ul li:hover span:nth-child(1){
+       transform: translate(0,0);
+       opacity: .2;
+}
+
+.paratxt{
+  padding-bottom: 10%;
+}
+.foot{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Permanent Marker','Kanit';
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1.5px;
+  background: #058080;
+}
+.map{
+  width: 100%;
+}
+iframe{
+  min-height: 400px;
+    max-width: 100%;
+    min-width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+</style>
+
+<body class="body" id="body">
+
+    <header>
+        <nav class="navbar  navbar-expand-lg  navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img src="tce.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                TCE
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+                <a class="nav-link" href="announcement.html">ANNOUNCEMENTS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">REGISTRATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="winner.html">LEADERBOARD</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ab">ABOUT US</a>
+              </li>
+            </ul>
+            <div class="form-inline">
+                <i class="fas fa-user-circle" style="font-size: 35px;"></i>
+                <a class="nav-link" href="profile.html" style="color:white">My Account</a></li>
+              </div>
+              </div>
+          </nav>
+        </header>
+        <main>
+         <div class="parallax1">
+           <div class="paratxt">
+               <h1 class="pcontxt clg" >COMPUTER SCIENCE AND ENGINEERING</h1><br>
+               <p class="par" data-aos="fade-up">THIAGARAR COLLEGE OF ENGINEERING</p><br><br><br>
+               <p class="quote" style="color:white; letter-spacing:1.6px" >-Where quality and ethics matter.</p>
+           </div>
+           
+         </div>
+         <br><br><br>
+          <div class="vis">
+            <h3 data-aos="fade-up">VISION</h3><br>
+            <p data-aos="fade-up">Excellence in Computer Science and Engineering education and research.</p><BR><BR>
+            <h3 data-aos="fade-up">MISSION</h3><br>
+            <p data-aos="fade-up" >Strive for academic excellence in Computer Science and Engineering through a creative teaching-learning process.
+            <br>Transform students into technically competent, socially responsible and ethical Computer Science professionals.<br>Create centres of excellence in leading areas of Computer Science and Engineering.
+            <br>Incubate, apply and spread innovative ideas by collaborating with relevant industries and R&D labs through focused research groups.<br>Attain these through continuous team work by a group of committed faculty transforming the Computer Science and Engineering department as a leader in imparting Computer Science and Engineering education and research.</p><BR>
+      <h3 style="color: white;" class="es" data-aos="fade-up"> ESTABLISHED IN 1964</h3>
+      <br><br><br>
+          </div>
+         <div class="parallax4">
+         <div class="vis">
+           <h3 style="color: #fff;" data-aos="fade-up">ASSOCIATIONS IN CSE DEPARTMENT</h3><br>
+           <p style="text-align: center;" data-aos="fade-up">The Awesome associations offered by TCE</p>
+         </div>
+         </div>
+         <div class="p1con"><center>
+            <section class="top-grid"  data-aos="fade-up">
+
+                 <div class="cardd">
+                  <div class="cardd-image"></div>
+                  <div class="cardd-text">
+                    <h2>IUCEE</h2>
+                    <p>The Vision of IUCEE is to improve the quality and global relevance of engineering education in India.</p>
+                  </div>
+                  <div class="cardd-stats" style="background-color: #9452a3">
+                    <div class="stat">
+                      <div class="value">FAIR</div>
+                      <div class="type">Rs.3100</div>
+                    </div>
+                    <div class="stat border">
+                      <div class="value">85</div>
+                      <div class="type">Participants</div>
+                    </div>
+                    <div class="stat">
+                      <div class="value">link</div>
+                      <div class="type"><a href="https//www.iucee.org">IUCEE</a></div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="cardd">
+                  <div class="cardd-image2"></div>
+                  <div class="cardd-text">
+                  <h2>CSI</h2><BR>
+                    <p>Computer Society of India (CSI) is the first and largest body of computer professionals in India.</p>
+                  </div>
+                  <div class="cardd-stats" style="background-color: #bcc244">
+                    <div class="stat">
+                      <div class="value">FAIR</div>
+                      <div class="type">Rs.900 </div>
+                    </div>
+                    <div class="stat border">
+                      <div class="value">214</div>
+                      <div class="type">Participants</div>
+                    </div>
+                    <div class="stat">
+                      <div class="value">Link</div>
+                      <div class="type"><a href="http://www.csi-india.org/">CSI</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cardd" >
+                  <div class="cardd-image3"></div>
+                  <div class="cardd-text">
+                    <h2>IEEE</h2>
+                    <p>IEEE and its members inspire a global community to innovate for a better tomorrow through its more than 419,000 members in over 160 countries.</p>
+                  </div>
+                  <div class="cardd-stats" style="background-color: #3eab53">
+                    <div class="stat">
+                      <div class="value">FAIR</div>
+                      <div class="type">Rs.700</div>
+                    </div>
+                    <div class="stat border">
+                      <div class="value">312</div>
+                      <div class="type">Participants</div>
+                    </div>
+                    <div class="stat">
+                      <div class="value">Link</div>
+                      <div class="type"><a href="https://www.ieee.org/">IEEE</a></div>
+                    </div>
+                  </div>
+                </div>
+              </section><br></center>
+         </div>
+                <br>
+
+
+         <div class="parallax2">
+          <br><br><br>
+           <div class="vis" data-aos="fade-up"><h3>EVENTS</h3><br>
+            <p style="text-align: center;" data-aos="fade-up">The events which assosiates to the students which are handled by our final year students and was sponsered by our CSE department associations </p></div><br><br>
+            <center><div class="re" data-aos="fade-up">
+               <a class="bu" style="text-align: center" href="event.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                GO TO EVENTS
+               </a>
+             </div> </center>
+          </div>
+
+
+      <div class="p2con"><center>
+        <section class="top-grid2" data-aos="fade-up">
+            <div class="cardt">
+               <div class="cardt-image11"></div>
+               <div class="cardt-text">
+                <h2>CODE STORM</h2><br>
+                <p>Let your logic be undeniable</p>
+              </div>
+            </div>
+            <div class="cardt" >
+              <div class="cardt-image12"></div>
+              <div class="cardt-text">
+               <h2>PHOTOGRAPY</h2><br>
+               <p>Say HAI to your bhotons</p>
+             </div>
+           </div>
+           <div class="cardt" >
+            <div class="cardt-image13"></div>
+            <div class="cardt-text">
+             <h2>CS_GO</h2><br>
+             <p>Unleash the tech Avenger in you.</p>
+           </div>
+         </div>
+         <div class="cardt">
+          <div class="cardt-image14"></div>
+          <div class="cardt-text">
+           <h2>NFS</h2><br>
+           <p>Let your web cling to the  design</p>
+         </div>
+       </div>
+          </section><br></center>
+      </div>
+
+       <div class="parallax6">
+        <br><br><br>
+         <div class="vis" data-aos="fade-up"><h3 style="color: #fff;">Special Interest Groups</h3><br><p style="color: white; font-weight:bold;padding-bottom: 5%;">Be a successor with our SIG's</p><br><br></div>
+        </div>
+
+        <div class="p2con"><center>
+          <section class="top-grid2" data-aos="fade-up">
+            <div class="cardss cardss1"  >
+               <div class="cardss-image11"></div>
+               <div class="cardss-text">
+                <h2>Systems<br>Engnieering</h2>
+              </div>
+            </div>
+            <div class="cardss cards2" >
+               <div class="cardss-image12"></div>
+               <div class="cardss-text" >
+                <h2>Software Development<br>and Engnieering</h2>
+              </div>
+            </div>
+            <div class="cardss cards3" >
+               <div class="cardss-image13"></div>
+               <div class="cardss-text">
+                <h2>Networks and<br>Security</h2>
+              </div>
+            </div><br>
+          <!-- </section></center>
+       </div>
+
+        <div class="p2con" data-aos="fade-up"> -->
+
+          <!-- <section class="top-grid2"> -->
+            <div class="cardss cards4">
+               <div class="cardss-image14"></div>
+               <div class="cardss-text">
+                <h2>Data<br>Mining</h2>
+              </div>
+            </div>
+            <div class="cardss cards5" >
+               <div class="cardss-image15"></div>
+               <div class="cardss-text">
+                <h2>Artificial<br>Intelligence</h2>
+              </div>
+            </div>
+            </section></center>
+       </div>
+        <div class="parallax5" id="ab">
+        <br><br><br>
+         <div  class="vis" data-aos="fade-up"><h3 style="color: #fff;">About US</h3><br></div>
+        </div>
+
+        <div class="p2con" data-aos="fade-up">
+          <br>
+          <br>
+         <p style="text-align:center;margin-left:5%;margin-right:5%;  font-family: 'Cormorant Garamond', serif;color: #b9bdbd;font-size:25px"> The FIST Supported Computer Science and Engineering Department has knowledge Engineering as its theme area. The Department has Laboratories supported by Microsoft, INTEL, TCS and HP.
+
+    AICTE, UGC, DIT and DST. The Department was a consortium Delhi. The Department has collaboration with EMC The Department has the privilege of having completed many R&D projects from RCI, partner of CDBR Smart and Secure Environment project sponsored by NTRO, New Data Storage Systems, VMware, Yahoo India, Adobe and CTS. As a Prometric Center, so International Certification programs are offered. The department is responsible for design and development of College Management Information System which has received many National Level Recognitions. The department has experienced faculty members with PHD and Publication in National and international Journals.</p>
+    <br>
+    <br>
+    </div>
+        </main>
+
+
+        <footer>
+          <div class="parallax3">
+        <h1 class="pcontxt" data-aos="fade-up" style="font-family:'Permanent Marker',cursive; font-size: 45px;">Reach Us on</h1>
+        <div class="socialbuttons" id="social" data-aos="fade-up">
+        <ul>
+          <li>
+            <a href="#">
+                <span style="background-color:rgb(41, 25, 253);"></span>
+                <span style="background-color:rgb(41, 25, 253);"></span>
+                <span style="background-color:rgb(41, 25, 253);"></span>
+                <span style="background-color:rgb(41, 25, 253);"></span>
+                <span style="background-color:rgb(41, 25, 253);" ><div style="text-align: center;justify-content: center;"><i class="fab fa-facebook-square"></i></div></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <span style="background-color:rgb(55, 101, 255);"></span>
+                <span style="background-color:rgb(55, 101, 255);"></span>
+                <span style="background-color:rgb(55, 101, 255);"></span>
+                <span style="background-color:rgb(55, 101, 255);"></span>
+                <span style="background-color:rgb(55, 101, 255);"><div style="text-align: center;justify-content: center;"><i class="fab fa-twitter-square"></i></div></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <span style="background-color:rgb(55, 55, 255);"></span>
+                <span style="background-color:rgb(55, 55, 255);"></span>
+                <span style="background-color:rgb(55, 55, 255);"></span>
+                <span style="background-color:rgb(55, 55, 255);"></span>
+                <span style="background-color:rgb(55, 55, 255);"><div style="text-align: center;justify-content: center;"><i class="fab fa-linkedin"></i></div></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <span style="background-color: rgb(255, 42, 42);"></span>
+                <span style="background-color: rgb(255, 42, 42);"></span>
+                <span style="background-color: rgb(255, 42, 42);"></span>
+                <span style="background-color: rgb(255, 42, 42);"></span>
+                <span style="background-color: rgb(255, 42, 42);"><div style="text-align: center;justify-content: center;"><i class="fab fa-youtube-square"></i></div></span>
+            </a>
+          </li>
+        </ul>
+        </div>
+        <div style="text-align: center;font-size: 48px;" id="mob-social" data-aos="fade-up" >
+          <br>
+          <i class="fab fa-facebook-square" style="color: rgb(41, 25, 253);"></i>
+          <i class="fab fa-twitter-square" style="color: rgb(55, 101, 255);;"></i><br>
+          <i class="fab fa-linkedin" style="color:rgb(55, 55, 255); "></i>
+          <i class="fab fa-youtube-square" style="color: rgb(255, 42, 42);"></i><br>
+        </div>
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.612923704926!2d78.08034261474128!3d9.882805092931578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cfc3f5983ce1%3A0x1a01bdb9a519c56a!2sMain%20Block%2C%20TCE%20Road%2C%20Thiruparankundram%2C%20Tamil%20Nadu%20625015!5e0!3m2!1sen!2sin!4v1587117706827!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+   </div>
+
+   </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+       <script>
+          AOS.init({
+            offset:180,
+            duration:900
+          });
+        </script>
+</body>
+</html>
